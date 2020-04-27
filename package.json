@@ -2,10 +2,10 @@
   "name": "taskie",
   "version": "1.0.0",
   "description": "A simple task assigning app, used by multiple people in a team.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "repository": {
     "type": "git",
