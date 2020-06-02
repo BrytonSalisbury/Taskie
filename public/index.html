@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Taskie</title>
 
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/login.css" />
-  </head>
+<head>
+  <title>Taskie</title>
 
-  <body>
-    <div class="center-flex">
-      <div class="login-container">
-        <img src="images/logo.png" alt="Logo" class="logo" />
-        <form action="/login" class="login-form">
-          <input
-            type="text"
-            name="username"
-            id="username-input"
-            placeholder="Username"
-            autocomplete="off"
-          />
-          <input
-            type="password"
-            name="password"
-            id="password-input"
-            placeholder="Password"
-          />
-          <button>LOGIN</button>
-        </form>
-        <script src="./js/login.js"></script>
-      </div>
+  <link rel="stylesheet" href="./stylesheets/normalize.css" />
+  <link rel="stylesheet" href="./stylesheets/login.css" />
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id"
+    content="249670114688-94ofh3e52gvpmcgt158beaonj0vgjddm.apps.googleusercontent.com">
+</head>
+
+<body>
+  <div class="center-flex">
+    <div class="login-container">
+      <img src="images/logo.png" alt="Logo" class="logo" />
+
+      <form action="/login" class="login-form">
+        <input type="text" name="username" id="username-input" placeholder="Username" autocomplete="off" />
+        <input type="password" name="password" id="password-input" placeholder="Password" />
+        <button>LOGIN</button>
+        <div class="google-login g-signin2" data-onsuccess="onSignIn"></div>
+      </form>
+      <script src="./javascripts/login.js"></script>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

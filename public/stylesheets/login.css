@@ -30,8 +30,8 @@ input:focus, button:focus {
 }
 
 .login-form {
-  margin-bottom: 2em;
-  margin: 0 auto;
+  margin-bottom: 3em;
+  /* margin: 0 auto; */
   text-align: center;
   width: fit-content;
 }
@@ -87,4 +87,10 @@ input:focus, button:focus {
   border: 3px solid #27187E;
   color: black;
   cursor: pointer;
+}
+
+.google-login {
+  display: flex;
+  margin-top: 1em;
+  justify-content: center;
 }
